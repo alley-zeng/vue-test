@@ -1,0 +1,49 @@
+
+.home-box{
+    display: flex;
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+    border-color: #eee;
+}
+.home-box.hot-box{
+    text-align: center;
+    border-top: 1px solid #eee;
+    border-color: #eee;
+}
+.hot{
+    position: relative;
+    padding-top: 0.15rem;
+    flex: 1;
+    border-right: 1px solid #eee;
+}
+.hot:last-child {
+    border-right: none;
+}
+.icon_hot{
+    position: absolute;
+    top: 6px;
+    right:6px;
+    width:30px;
+}
+.hot-img{
+    width: 66%;
+}
+
+.other-box{
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.other{
+    position: relative;
+    padding-top: 0.15rem;
+    width: 33.33%;
+}
+.other-img{
+    width: 100%    
+}
+.line-bottom{
+    border-bottom: 1px solid  #eee
+}
+.line-right{
+    border-right: 1px solid  #eee
+}
