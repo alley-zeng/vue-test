@@ -35,10 +35,11 @@ export default {
   data: () => {
     return {
       bannerlist: [
-        { img: require('../assets/images/index/index_banner1.jpg') },
-        { img: require('../assets/images/index/index_banner2.jpg') },
-        { img: require('../assets/images/index/index_banner3.jpg') },
-        { img: require('../assets/images/index/index_banner4.jpg') }
+      { img: 'https://img01.youdemai.com/images/ydmapp/banner/285/banner_190402.png' },
+        { img: require('../assets/images/index/banner_190402.png') },
+        { img: require('../assets/images/index/brith_banner.png') },
+        { img: require('../assets/images/index/new_banner_01.png') },
+        { img: require('../assets/images/index/new_banner_02.png') }        
       ],
       hotType: [],
       hotRecyle: [
@@ -85,11 +86,7 @@ export default {
       url: 'https://m.youdemai.com/androidapp283/app/index'
     })
       .then(res => {
-        console.log(res.data)
         this.hotType = res.data.hotType
-        console.log(this.hotType)
-        // this.hotRecyle = res.data.listType.top
-        console.log(this.hotRecyle)
       })
       .catch(function(err) {
         console.log(err)
@@ -105,6 +102,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   padding-bottom: 0.6rem;
+  position: relative;
 }
 .main_list_category {
   width: 100%;

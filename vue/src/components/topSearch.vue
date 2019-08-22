@@ -4,11 +4,9 @@
     <router-link to="./searchindex">
       <div class="search">
         <div class="log_img">
-          <a href="#">
-            <img src="../assets/images/icon/header_logo.png" alt>
-          </a>
+            <img src="https://alicdn01.youdemai.com/images/ydmapp/common/logo/logo.png" alt="有得卖">
         </div>
-        <div class="search_box">输入您卖的机型</div>
+        <div class="search_box">搜索您想要售卖的机器</div>
       </div>
     </router-link>
   </div>
@@ -26,6 +24,8 @@ export default {
 .topSearch {
   width: 100%;
   height: 1rem;
+  position:fixed;
+  z-index: 998;
 }
 .them_color {
   position: fixed;
@@ -35,7 +35,7 @@ export default {
   height: 0.96rem;
   background: #e5646c;
   opacity: 0;
-  z-index: 998;
+
 }
 .search {
   position: fixed;
@@ -45,7 +45,6 @@ export default {
   padding: 0.16rem 0.26rem 0.16rem 0;
   line-height: 0.6rem;
   z-index: 999;
-  background: #fff;
   padding-top: 0.2rem;
   display: flex;
   display: -webkit-flex;
@@ -60,9 +59,8 @@ export default {
 }
 .search_box {
   width: 73%;
-  background: #f0f0f0 url('../assets/images/icon/search-icon.png') no-repeat 97%
-    center;
-  background-size: 0.3rem;
+    background: rgba(255,255,255,0.2) url(https://alicdn01.youdemai.com/images/ydmapp/common/icon/new_search.png)no-repeat 0.9rem center;
+    background-size: 0.3rem;
   padding: 0.06rem 0;
   border-radius: 0.1rem;
   line-height: 0.3rem;
